@@ -15,6 +15,8 @@
   NSString *name;
   NSString *birthday;
   NSInteger age;
+  NSString *gender;
+  NSString *civilStatus;
   
   NSInteger *updateid;
   
@@ -23,10 +25,13 @@
 }
 
 @property (nonatomic, readonly) NSInteger surveyID;
-@property (nonatomic) NSInteger *updateid;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *birthday;
 @property (nonatomic) NSInteger age;
+@property (nonatomic, copy) NSString *gender;
+@property (nonatomic, copy) NSString *civilStatus;
+
+@property (nonatomic) NSInteger *updateid;
 
 @property (nonatomic, readwrite) BOOL isDirty;
 @property (nonatomic, readwrite) BOOL isDetailViewHydrated;
@@ -35,6 +40,7 @@
 + (void)finalizeStatements;
 
 - (id) initWithPrimaryKey:(NSInteger)pk;
+
 - (void) addSurvey;
 - (void) deleteSurvey;
 - (void) saveAllData;
