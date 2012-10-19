@@ -18,6 +18,8 @@
   NSString *birthday;
   NSInteger age;
   
+  NSString *gender;
+  NSString *civilStatus;
 }
 
 @property (strong, nonatomic) UIWindow *window;
