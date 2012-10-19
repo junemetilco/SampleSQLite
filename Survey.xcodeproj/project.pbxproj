@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B62FB650163140D7003769CF /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62FB64E163140D7003769CF /* EditViewController.m */; };
+		B62FB651163140D7003769CF /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62FB64F163140D7003769CF /* EditViewController.xib */; };
+		B683FB71162FDC39003BB392 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B683FB6F162FDC39003BB392 /* DetailViewController.m */; };
+		B683FB72162FDC39003BB392 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B683FB70162FDC39003BB392 /* DetailViewController.xib */; };
+		B6BFCA72162D3201006AB5BA /* Survey.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BFCA71162D3201006AB5BA /* Survey.m */; };
+		B6BFCA75162D3F37006AB5BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BFCA74162D3F37006AB5BA /* libsqlite3.dylib */; };
+		B6BFCA7F162D5A86006AB5BA /* survey.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B6BFCA7E162D5A86006AB5BA /* survey.sqlite */; };
+		B6C3016F1623D15B008DAF42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C3016E1623D15B008DAF42 /* UIKit.framework */; };
+		B6C301711623D15B008DAF42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C301701623D15B008DAF42 /* Foundation.framework */; };
+		B6C301731623D15B008DAF42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C301721623D15B008DAF42 /* CoreGraphics.framework */; };
+		B6C301791623D15B008DAF42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6C301771623D15B008DAF42 /* InfoPlist.strings */; };
+		B6C3017B1623D15B008DAF42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3017A1623D15B008DAF42 /* main.m */; };
+		B6C301AB1623D1C3008DAF42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3019B1623D1C3008DAF42 /* AppDelegate.m */; };
+		B6C301AC1623D1C3008DAF42 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3019F1623D1C3008DAF42 /* FirstViewController.m */; };
+		B6C301AD1623D1C3008DAF42 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C301A21623D1C3008DAF42 /* SecondViewController.m */; };
+		B6C301B71623D370008DAF42 /* BirthdayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C301B51623D370008DAF42 /* BirthdayController.m */; };
+		B6C3020C1623F31E008DAF42 /* AgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3020A1623F31D008DAF42 /* AgeViewController.m */; };
+		B6C3021F1623FB1F008DAF42 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C3021E1623FB1F008DAF42 /* Globals.m */; };
+		B6C9E5C816241DF20007A4D4 /* UICheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C9E5C316241DF20007A4D4 /* UICheckbox.m */; };
+		B6C9E5C916241DF20007A4D4 /* uicheckbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C9E5C416241DF20007A4D4 /* uicheckbox_checked.png */; };
+		B6C9E5CA16241DF20007A4D4 /* uicheckbox_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C9E5C516241DF20007A4D4 /* uicheckbox_checked@2x.png */; };
+		B6C9E5CB16241DF20007A4D4 /* uicheckbox_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C9E5C616241DF20007A4D4 /* uicheckbox_unchecked.png */; };
+		B6C9E5CC16241DF20007A4D4 /* uicheckbox_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C9E5C716241DF20007A4D4 /* uicheckbox_unchecked@2x.png */; };
+		B6CAA46D162E689B009015E8 /* AgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA466162E689B009015E8 /* AgeViewController.xib */; };
+		B6CAA46E162E689B009015E8 /* BirthdayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA467162E689B009015E8 /* BirthdayController.xib */; };
+		B6CAA46F162E689B009015E8 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA468162E689B009015E8 /* FirstViewController.xib */; };
+		B6CAA471162E689B009015E8 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA46B162E689B009015E8 /* SecondViewController.xib */; };
+		B6CAA490162EB0CC009015E8 /* button_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48A162EB0CC009015E8 /* button_back.png */; };
+		B6CAA491162EB0CC009015E8 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48B162EB0CC009015E8 /* down.png */; };
+		B6CAA492162EB0CC009015E8 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48C162EB0CC009015E8 /* first.png */; };
+		B6CAA493162EB0CC009015E8 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48D162EB0CC009015E8 /* first@2x.png */; };
+		B6CAA494162EB0CC009015E8 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48E162EB0CC009015E8 /* second.png */; };
+		B6CAA495162EB0CC009015E8 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CAA48F162EB0CC009015E8 /* second@2x.png */; };
+		B6CAA4AA162EB0E4009015E8 /* DropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CAA4A9162EB0E4009015E8 /* DropDownView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B62FB64D163140D7003769CF /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		B62FB64E163140D7003769CF /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		B62FB64F163140D7003769CF /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		B683FB6E162FDC39003BB392 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B683FB6F162FDC39003BB392 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B683FB70162FDC39003BB392 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		B6BFCA70162D3201006AB5BA /* Survey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Survey.h; sourceTree = "<group>"; };
+		B6BFCA71162D3201006AB5BA /* Survey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Survey.m; sourceTree = "<group>"; };
+		B6BFCA74162D3F37006AB5BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B6BFCA7E162D5A86006AB5BA /* survey.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = survey.sqlite; sourceTree = SOURCE_ROOT; };
+		B6C3016A1623D15B008DAF42 /* Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C3016E1623D15B008DAF42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6C301701623D15B008DAF42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6C301721623D15B008DAF42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6C301761623D15B008DAF42 /* Survey-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Survey-Info.plist"; sourceTree = "<group>"; };
+		B6C301781623D15B008DAF42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6C3017A1623D15B008DAF42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6C3017C1623D15B008DAF42 /* Survey-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Survey-Prefix.pch"; sourceTree = "<group>"; };
+		B6C3019A1623D1C3008DAF42 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6C3019B1623D1C3008DAF42 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6C3019E1623D1C3008DAF42 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B6C3019F1623D1C3008DAF42 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B6C301A11623D1C3008DAF42 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B6C301A21623D1C3008DAF42 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B6C301B41623D370008DAF42 /* BirthdayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayController.h; sourceTree = "<group>"; };
+		B6C301B51623D370008DAF42 /* BirthdayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayController.m; sourceTree = "<group>"; };
+		B6C302091623F31D008DAF42 /* AgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgeViewController.h; sourceTree = "<group>"; };
+		B6C3020A1623F31D008DAF42 /* AgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgeViewController.m; sourceTree = "<group>"; };
+		B6C3021D1623FB1F008DAF42 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		B6C3021E1623FB1F008DAF42 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		B6C9E5C216241DF20007A4D4 /* UICheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckbox.h; sourceTree = "<group>"; };
+		B6C9E5C316241DF20007A4D4 /* UICheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckbox.m; sourceTree = "<group>"; };
+		B6C9E5C416241DF20007A4D4 /* uicheckbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uicheckbox_checked.png; sourceTree = "<group>"; };
+		B6C9E5C516241DF20007A4D4 /* uicheckbox_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uicheckbox_checked@2x.png"; sourceTree = "<group>"; };
+		B6C9E5C616241DF20007A4D4 /* uicheckbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uicheckbox_unchecked.png; sourceTree = "<group>"; };
+		B6C9E5C716241DF20007A4D4 /* uicheckbox_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uicheckbox_unchecked@2x.png"; sourceTree = "<group>"; };
+		B6CAA466162E689B009015E8 /* AgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgeViewController.xib; sourceTree = "<group>"; };
+		B6CAA467162E689B009015E8 /* BirthdayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirthdayController.xib; sourceTree = "<group>"; };
+		B6CAA468162E689B009015E8 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B6CAA46B162E689B009015E8 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		B6CAA48A162EB0CC009015E8 /* button_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_back.png; sourceTree = "<group>"; };
+		B6CAA48B162EB0CC009015E8 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		B6CAA48C162EB0CC009015E8 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B6CAA48D162EB0CC009015E8 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B6CAA48E162EB0CC009015E8 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B6CAA48F162EB0CC009015E8 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B6CAA4A8162EB0E4009015E8 /* DropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownView.h; sourceTree = "<group>"; };
+		B6CAA4A9162EB0E4009015E8 /* DropDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6C301671623D15B008DAF42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BFCA75162D3F37006AB5BA /* libsqlite3.dylib in Frameworks */,
+				B6C3016F1623D15B008DAF42 /* UIKit.framework in Frameworks */,
+				B6C301711623D15B008DAF42 /* Foundation.framework in Frameworks */,
+				B6C301731623D15B008DAF42 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6C3015F1623D15B008DAF42 = {
+			isa = PBXGroup;
+			children = (
+				B6C301741623D15B008DAF42 /* Survey */,
+				B6C9E5C016241DF20007A4D4 /* Vendor */,
+				B6C3016D1623D15B008DAF42 /* Frameworks */,
+				B6C3016B1623D15B008DAF42 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			wrapsLines = 0;
+		};
+		B6C3016B1623D15B008DAF42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3016A1623D15B008DAF42 /* Survey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C3016D1623D15B008DAF42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFCA74162D3F37006AB5BA /* libsqlite3.dylib */,
+				B6C3016E1623D15B008DAF42 /* UIKit.framework */,
+				B6C301701623D15B008DAF42 /* Foundation.framework */,
+				B6C301721623D15B008DAF42 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C301741623D15B008DAF42 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				B6C301991623D1C3008DAF42 /* AppDelegate */,
+				B6C3019C1623D1C3008DAF42 /* Controller */,
+				B6C301A31623D1C3008DAF42 /* Resources */,
+				B6C301A81623D1C3008DAF42 /* Views */,
+				B6C301751623D15B008DAF42 /* Supporting Files */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		B6C301751623D15B008DAF42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFCA7E162D5A86006AB5BA /* survey.sqlite */,
+				B6C301761623D15B008DAF42 /* Survey-Info.plist */,
+				B6C301771623D15B008DAF42 /* InfoPlist.strings */,
+				B6C3017A1623D15B008DAF42 /* main.m */,
+				B6C3017C1623D15B008DAF42 /* Survey-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6C301991623D1C3008DAF42 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3019A1623D1C3008DAF42 /* AppDelegate.h */,
+				B6C3019B1623D1C3008DAF42 /* AppDelegate.m */,
+				B6BFCA70162D3201006AB5BA /* Survey.h */,
+				B6BFCA71162D3201006AB5BA /* Survey.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B6C3019C1623D1C3008DAF42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6C3019D1623D1C3008DAF42 /* FirstView */,
+				B6C301A01623D1C3008DAF42 /* SecondView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6C3019D1623D1C3008DAF42 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				B6C302091623F31D008DAF42 /* AgeViewController.h */,
+				B6C3020A1623F31D008DAF42 /* AgeViewController.m */,
+				B6C301B41623D370008DAF42 /* BirthdayController.h */,
+				B6C301B51623D370008DAF42 /* BirthdayController.m */,
+				B6C3019E1623D1C3008DAF42 /* FirstViewController.h */,
+				B6C3019F1623D1C3008DAF42 /* FirstViewController.m */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		B6C301A01623D1C3008DAF42 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				B6C301A11623D1C3008DAF42 /* SecondViewController.h */,
+				B6C301A21623D1C3008DAF42 /* SecondViewController.m */,
+				B683FB6E162FDC39003BB392 /* DetailViewController.h */,
+				B683FB6F162FDC39003BB392 /* DetailViewController.m */,
+				B683FB70162FDC39003BB392 /* DetailViewController.xib */,
+				B62FB64D163140D7003769CF /* EditViewController.h */,
+				B62FB64E163140D7003769CF /* EditViewController.m */,
+				B62FB64F163140D7003769CF /* EditViewController.xib */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		B6C301A31623D1C3008DAF42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA489162EB0CC009015E8 /* images */,
+				B6C3021D1623FB1F008DAF42 /* Globals.h */,
+				B6C3021E1623FB1F008DAF42 /* Globals.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6C301A81623D1C3008DAF42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA464162E689B009015E8 /* FirstView */,
+				B6CAA46A162E689B009015E8 /* SecondView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6C9E5C016241DF20007A4D4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA4A7162EB0E4009015E8 /* DropDown */,
+				B6C9E5C116241DF20007A4D4 /* UICheckBox */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B6C9E5C116241DF20007A4D4 /* UICheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				B6C9E5C216241DF20007A4D4 /* UICheckbox.h */,
+				B6C9E5C316241DF20007A4D4 /* UICheckbox.m */,
+				B6C9E5C416241DF20007A4D4 /* uicheckbox_checked.png */,
+				B6C9E5C516241DF20007A4D4 /* uicheckbox_checked@2x.png */,
+				B6C9E5C616241DF20007A4D4 /* uicheckbox_unchecked.png */,
+				B6C9E5C716241DF20007A4D4 /* uicheckbox_unchecked@2x.png */,
+			);
+			path = UICheckBox;
+			sourceTree = "<group>";
+		};
+		B6CAA464162E689B009015E8 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA466162E689B009015E8 /* AgeViewController.xib */,
+				B6CAA467162E689B009015E8 /* BirthdayController.xib */,
+				B6CAA468162E689B009015E8 /* FirstViewController.xib */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		B6CAA46A162E689B009015E8 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA46B162E689B009015E8 /* SecondViewController.xib */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		B6CAA489162EB0CC009015E8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA48A162EB0CC009015E8 /* button_back.png */,
+				B6CAA48B162EB0CC009015E8 /* down.png */,
+				B6CAA48C162EB0CC009015E8 /* first.png */,
+				B6CAA48D162EB0CC009015E8 /* first@2x.png */,
+				B6CAA48E162EB0CC009015E8 /* second.png */,
+				B6CAA48F162EB0CC009015E8 /* second@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B6CAA4A7162EB0E4009015E8 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				B6CAA4A8162EB0E4009015E8 /* DropDownView.h */,
+				B6CAA4A9162EB0E4009015E8 /* DropDownView.m */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6C301691623D15B008DAF42 /* Survey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C301961623D15C008DAF42 /* Build configuration list for PBXNativeTarget "Survey" */;
+			buildPhases = (
+				B6C301661623D15B008DAF42 /* Sources */,
+				B6C301671623D15B008DAF42 /* Frameworks */,
+				B6C301681623D15B008DAF42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Survey;
+			productName = Survey;
+			productReference = B6C3016A1623D15B008DAF42 /* Survey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6C301611623D15B008DAF42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "HP Outsourcing";
+			};
+			buildConfigurationList = B6C301641623D15B008DAF42 /* Build configuration list for PBXProject "Survey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6C3015F1623D15B008DAF42;
+			productRefGroup = B6C3016B1623D15B008DAF42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6C301691623D15B008DAF42 /* Survey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6C301681623D15B008DAF42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C301791623D15B008DAF42 /* InfoPlist.strings in Resources */,
+				B6C9E5C916241DF20007A4D4 /* uicheckbox_checked.png in Resources */,
+				B6C9E5CA16241DF20007A4D4 /* uicheckbox_checked@2x.png in Resources */,
+				B6C9E5CB16241DF20007A4D4 /* uicheckbox_unchecked.png in Resources */,
+				B6C9E5CC16241DF20007A4D4 /* uicheckbox_unchecked@2x.png in Resources */,
+				B6BFCA7F162D5A86006AB5BA /* survey.sqlite in Resources */,
+				B6CAA46D162E689B009015E8 /* AgeViewController.xib in Resources */,
+				B6CAA46E162E689B009015E8 /* BirthdayController.xib in Resources */,
+				B6CAA46F162E689B009015E8 /* FirstViewController.xib in Resources */,
+				B6CAA471162E689B009015E8 /* SecondViewController.xib in Resources */,
+				B6CAA490162EB0CC009015E8 /* button_back.png in Resources */,
+				B6CAA491162EB0CC009015E8 /* down.png in Resources */,
+				B6CAA492162EB0CC009015E8 /* first.png in Resources */,
+				B6CAA493162EB0CC009015E8 /* first@2x.png in Resources */,
+				B6CAA494162EB0CC009015E8 /* second.png in Resources */,
+				B6CAA495162EB0CC009015E8 /* second@2x.png in Resources */,
+				B683FB72162FDC39003BB392 /* DetailViewController.xib in Resources */,
+				B62FB651163140D7003769CF /* EditViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6C301661623D15B008DAF42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C3017B1623D15B008DAF42 /* main.m in Sources */,
+				B6C301AB1623D1C3008DAF42 /* AppDelegate.m in Sources */,
+				B6C301AC1623D1C3008DAF42 /* FirstViewController.m in Sources */,
+				B6C301AD1623D1C3008DAF42 /* SecondViewController.m in Sources */,
+				B6C301B71623D370008DAF42 /* BirthdayController.m in Sources */,
+				B6C3020C1623F31E008DAF42 /* AgeViewController.m in Sources */,
+				B6C3021F1623FB1F008DAF42 /* Globals.m in Sources */,
+				B6C9E5C816241DF20007A4D4 /* UICheckbox.m in Sources */,
+				B6BFCA72162D3201006AB5BA /* Survey.m in Sources */,
+				B6CAA4AA162EB0E4009015E8 /* DropDownView.m in Sources */,
+				B683FB71162FDC39003BB392 /* DetailViewController.m in Sources */,
+				B62FB650163140D7003769CF /* EditViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6C301771623D15B008DAF42 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6C301781623D15B008DAF42 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6C301941623D15C008DAF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6C301951623D15C008DAF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6C301971623D15C008DAF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Survey/Survey-Prefix.pch";
+				INFOPLIST_FILE = "Survey/Survey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6C301981623D15C008DAF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Survey/Survey-Prefix.pch";
+				INFOPLIST_FILE = "Survey/Survey-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6C301641623D15B008DAF42 /* Build configuration list for PBXProject "Survey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C301941623D15C008DAF42 /* Debug */,
+				B6C301951623D15C008DAF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C301961623D15C008DAF42 /* Build configuration list for PBXNativeTarget "Survey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C301971623D15C008DAF42 /* Debug */,
+				B6C301981623D15C008DAF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6C301611623D15B008DAF42 /* Project object */;
+}
