@@ -11,12 +11,10 @@
 @interface AgeViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
   
   IBOutlet UILabel *pLabel;
-//  NSMutableArray *arrayNo;
   NSArray *arrayNo;
   IBOutlet UIPickerView *agePickerView;
 }
 
 @property (nonatomic, retain) UILabel *pLabel;
-
 
 @end

@@ -13,10 +13,7 @@
 @interface BirthdayController : UIViewController {
   
   FirstViewController *firstView;
-  
   IBOutlet UILabel *bLabel;
-//  IBOutlet UIPickerView *bdayPickerView;
-  
   IBOutlet UIDatePicker *bdayPickerView;
   
 }
@@ -24,6 +21,5 @@
 @property (nonatomic, retain) UILabel *bLabel;
 
 - (IBAction)getSelectedDate:(id)sender;
-
 
 @end

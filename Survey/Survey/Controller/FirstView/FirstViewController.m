@@ -8,17 +8,14 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-
 #import "BirthdayController.h"
 #import "AgeViewController.h"
-
 #import "Survey.h"
-
 #import "UICheckbox.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-@interface FirstViewController () { }
+@interface FirstViewController ()
 
 @property (nonatomic, retain) BirthdayController *bdayController;
 @property (nonatomic, retain) AgeViewController *ageController;
@@ -42,6 +39,8 @@
 @synthesize age;
 @synthesize birthday;
 
+@synthesize genderLabel;
+
 @synthesize maleCheckbox = _maleCheckbox;
 @synthesize femaleCheckbox = _femaleCheckbox;
 @synthesize SSSCheckbox = _SSSCheckbox;
@@ -62,12 +61,6 @@
       self.tabBarItem.image = [UIImage imageNamed:@"first"];
   }
   return self;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,6 +155,12 @@
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)didReceiveMemoryWarning
+{
+  [super didReceiveMemoryWarning];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL) textFieldShouldReturn:(UITextField *)theTextField
 {
   [name resignFirstResponder];
@@ -212,9 +211,11 @@
   NSLog(@"checkbox.checked = %@", (self.maleCheckbox.checked) ? @"YES" : @"NO");
   NSLog(@"checkbox.disabled = %@", (self.maleCheckbox.disabled) ? @"YES" : @"NO");
   
-  if (self.maleCheckbox.checked) 
+  if (self.maleCheckbox.checked) {
     self.femaleCheckbox.disabled = TRUE;
-  else
+    genderLabel.text = @"Male";
+    NSLog(@"Male");
+  } else
     self.femaleCheckbox.disabled = FALSE;
 }
 
@@ -226,10 +227,13 @@
   NSLog(@"checkbox.checked = %@", (self.femaleCheckbox.checked) ? @"YES" : @"NO");
   NSLog(@"checkbox.disabled = %@", (self.femaleCheckbox.disabled) ? @"YES" : @"NO");
   
-  if(self.femaleCheckbox.checked == TRUE)
+  if(self.femaleCheckbox.checked == TRUE) {
     self.maleCheckbox.disabled = TRUE;
-  else
+    genderLabel.text = @"Female";
+    NSLog(@"Female");
+  } else
     self.maleCheckbox.disabled = FALSE;
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -292,7 +296,6 @@
     self.separatedCheckbox.disabled = FALSE;
     self.widowedCheckbox.disabled = FALSE;
   }
-  
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -349,7 +352,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark Survey Action
+#pragma mark - Saving Survey Action
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 - (IBAction) saveSurveyToDB:(id)sender
 {  
@@ -376,7 +379,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark DropDown
+#pragma mark - DropDownButton Action
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) dropDownCellSelected:(NSInteger)returnIndex
 {
@@ -388,6 +391,5 @@
 {
   [dropDownView openAnimation];
 }
-
 
 @end

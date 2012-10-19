@@ -12,7 +12,7 @@
 
 @class BirthdayController, AgeViewController, UICheckbox, Survey, SecondViewController;
 
-@interface FirstViewController : UIViewController <DropDownViewDelegate>{
+@interface FirstViewController : UIViewController <DropDownViewDelegate> {
   
   AgeViewController *ageController;
   UINavigationController *ageNavController;
@@ -36,6 +36,8 @@
 
 @property (nonatomic, retain) IBOutlet UIButton *birthdayBtn;
 @property (nonatomic, retain) IBOutlet UIButton *ageBtn;
+
+@property (nonatomic, retain) UILabel *genderLabel;
 
 @property (nonatomic, strong) IBOutlet UICheckbox *maleCheckbox;
 @property (nonatomic, strong) IBOutlet UICheckbox *femaleCheckbox;
