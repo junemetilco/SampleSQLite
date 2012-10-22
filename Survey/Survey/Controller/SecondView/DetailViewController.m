@@ -92,7 +92,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tblView 
 {
-  return 3;
+  return 5;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -124,6 +124,13 @@
 			break;
     case 2:
       cell.textLabel.text = stringAge;
+      break;
+    case 3:
+      cell.textLabel.text = surveyObj.gender;
+      break;
+    case 4:
+      cell.textLabel. text = surveyObj.civilStatus;
+      break;
 	}
 	
 	return cell;
@@ -165,6 +172,14 @@
     case 2:
       editViewController.keyOfTheFieldToEdit = @"age";
       editViewController.editValue = stringAge;
+      break;
+    case 3:
+      editViewController.keyOfTheFieldToEdit = @"gender";
+      editViewController.editValue = surveyObj.gender;
+      break;
+    case 4:
+      editViewController.keyOfTheFieldToEdit = @"civilStatus";
+      editViewController.editValue = surveyObj.civilStatus;
       break;
   }
   

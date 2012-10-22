@@ -136,7 +136,10 @@ NSMutableArray *surveys;
   
   Survey *surveyObj = [appDelegate.surveyArray objectAtIndex:indexPath.row];
   
+  
   cell.textLabel.text = surveyObj.name;
+  cell.detailTextLabel.text = surveyObj.gender;
+  
   
 //	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
   
@@ -146,7 +149,7 @@ NSMutableArray *surveys;
 //////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  selectedIndexPath = indexPath;
+//  selectedIndexPath = indexPath;
   
   if (!detailController)
     detailController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
@@ -154,10 +157,9 @@ NSMutableArray *surveys;
   if(!detailNavController)
     detailNavController = [[UINavigationController alloc] initWithRootViewController:detailController];
   
-  Survey *surveyObj = [appDelegate.surveyArray objectAtIndex:indexPath.row];
-  
-  [surveyObj hydrateDetailViewData];
-  detailController.surveyObj = surveyObj;
+//  Survey *surveyObj = [appDelegate.surveyArray objectAtIndex:indexPath.row];
+//  [surveyObj hydrateDetailViewData];
+//  detailController.surveyObj = surveyObj;
   
   [self presentModalViewController:detailNavController animated:YES];
   

@@ -25,7 +25,6 @@ static sqlite3_stmt *updateStmt = nil;
 @synthesize name;
 @synthesize birthday;
 @synthesize age;
-
 @synthesize gender;
 @synthesize civilStatus;
 

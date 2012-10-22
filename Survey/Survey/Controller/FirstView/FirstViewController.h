@@ -38,6 +38,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *ageBtn;
 
 @property (nonatomic, retain) UILabel *genderLabel;
+@property (nonatomic, retain) UILabel *civilStatusLabel;
 
 @property (nonatomic, strong) IBOutlet UICheckbox *maleCheckbox;
 @property (nonatomic, strong) IBOutlet UICheckbox *femaleCheckbox;

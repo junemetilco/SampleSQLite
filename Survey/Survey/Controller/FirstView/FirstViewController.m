@@ -38,8 +38,8 @@
 @synthesize name;
 @synthesize age;
 @synthesize birthday;
-
 @synthesize genderLabel;
+@synthesize civilStatusLabel;
 
 @synthesize maleCheckbox = _maleCheckbox;
 @synthesize femaleCheckbox = _femaleCheckbox;
@@ -237,6 +237,82 @@
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction) singleCheckBox:(id)sender
+{
+  NSLog(@"checkbox.checked = %@", (self.singleCheckbox.checked) ? @"YES" : @"NO");
+  NSLog(@"checkbox.disabled = %@", (self.singleCheckbox.disabled) ? @"YES" : @"NO");
+  
+  if(self.singleCheckbox.checked == TRUE) {
+    self.marriedCheckbox.disabled = TRUE;
+    self.separatedCheckbox.disabled = TRUE;
+    self.widowedCheckbox.disabled = TRUE;
+    civilStatusLabel.text = @"Single";
+    NSLog(@"Single");
+  } else {
+    self.marriedCheckbox.disabled = FALSE;
+    self.separatedCheckbox.disabled = FALSE;
+    self.widowedCheckbox.disabled = FALSE;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction) marriedCheckBox:(id)sender
+{
+  NSLog(@"checkbox.checked = %@", (self.marriedCheckbox.checked) ? @"YES" : @"NO");
+  NSLog(@"checkbox.disabled = %@", (self.marriedCheckbox.disabled) ? @"YES" : @"NO");
+  
+  if(self.marriedCheckbox.checked == TRUE) {
+    self.singleCheckbox.disabled = TRUE;
+    self.separatedCheckbox.disabled = TRUE;
+    self.widowedCheckbox.disabled = TRUE;
+    civilStatusLabel.text = @"Married";
+    NSLog(@"Married");
+  } else {
+    self.singleCheckbox.disabled = FALSE;
+    self.separatedCheckbox.disabled = FALSE;
+    self.widowedCheckbox.disabled = FALSE;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction) separatedCheckBox:(id)sender
+{
+  NSLog(@"checkbox.checked = %@", (self.separatedCheckbox.checked) ? @"YES" : @"NO");
+  NSLog(@"checkbox.disabled = %@", (self.separatedCheckbox.disabled) ? @"YES" : @"NO");
+  
+  if(self.separatedCheckbox.checked == TRUE) {
+    self.singleCheckbox.disabled = TRUE;
+    self.marriedCheckbox.disabled = TRUE;
+    self.widowedCheckbox.disabled = TRUE;
+    civilStatusLabel.text = @"Separated";
+    NSLog(@"Separated");
+  } else {
+    self.singleCheckbox.disabled = FALSE;
+    self.marriedCheckbox.disabled = FALSE;
+    self.widowedCheckbox.disabled = FALSE;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction) widowedCheckBox:(id)sender
+{
+  NSLog(@"checkbox.checked = %@", (self.widowedCheckbox.checked) ? @"YES" : @"NO");
+  NSLog(@"checkbox.disabled = %@", (self.widowedCheckbox.disabled) ? @"YES" : @"NO");
+  
+  if(self.widowedCheckbox.checked == TRUE) {
+    self.singleCheckbox.disabled = TRUE;
+    self.marriedCheckbox.disabled = TRUE;
+    self.separatedCheckbox.disabled = TRUE;
+    civilStatusLabel.text = @"Widowed";
+    NSLog(@"Widowed");
+  } else {
+    self.singleCheckbox.disabled = FALSE;
+    self.marriedCheckbox.disabled = FALSE;
+    self.separatedCheckbox.disabled = FALSE;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 - (IBAction) SSSCheckBox:(id)sender
 {
   NSLog(@"checkbox.checked = %@", (self.SSSCheckbox.checked) ? @"YES" : @"NO");
@@ -265,79 +341,13 @@
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-- (IBAction) singleCheckBox:(id)sender
-{
-  NSLog(@"checkbox.checked = %@", (self.singleCheckbox.checked) ? @"YES" : @"NO");
-  NSLog(@"checkbox.disabled = %@", (self.singleCheckbox.disabled) ? @"YES" : @"NO");
-  
-  if(self.singleCheckbox.checked == TRUE) {
-    self.marriedCheckbox.disabled = TRUE;
-    self.separatedCheckbox.disabled = TRUE;
-    self.widowedCheckbox.disabled = TRUE;
-  } else {
-    self.marriedCheckbox.disabled = FALSE;
-    self.separatedCheckbox.disabled = FALSE;
-    self.widowedCheckbox.disabled = FALSE;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-- (IBAction) marriedCheckBox:(id)sender
-{
-  NSLog(@"checkbox.checked = %@", (self.marriedCheckbox.checked) ? @"YES" : @"NO");
-  NSLog(@"checkbox.disabled = %@", (self.marriedCheckbox.disabled) ? @"YES" : @"NO");
-  
-  if(self.marriedCheckbox.checked == TRUE) {
-    self.singleCheckbox.disabled = TRUE;
-    self.separatedCheckbox.disabled = TRUE;
-    self.widowedCheckbox.disabled = TRUE;
-  } else {
-    self.singleCheckbox.disabled = FALSE;
-    self.separatedCheckbox.disabled = FALSE;
-    self.widowedCheckbox.disabled = FALSE;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-- (IBAction) separatedCheckBox:(id)sender
-{
-  NSLog(@"checkbox.checked = %@", (self.separatedCheckbox.checked) ? @"YES" : @"NO");
-  NSLog(@"checkbox.disabled = %@", (self.separatedCheckbox.disabled) ? @"YES" : @"NO");
-  
-  if(self.separatedCheckbox.checked == TRUE) {
-    self.singleCheckbox.disabled = TRUE;
-    self.marriedCheckbox.disabled = TRUE;
-    self.widowedCheckbox.disabled = TRUE;
-  } else {
-    self.singleCheckbox.disabled = FALSE;
-    self.marriedCheckbox.disabled = FALSE;
-    self.widowedCheckbox.disabled = FALSE;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-- (IBAction) widowedCheckBox:(id)sender
-{
-  NSLog(@"checkbox.checked = %@", (self.widowedCheckbox.checked) ? @"YES" : @"NO");
-  NSLog(@"checkbox.disabled = %@", (self.widowedCheckbox.disabled) ? @"YES" : @"NO");
-  
-  if(self.widowedCheckbox.checked == TRUE) {
-    self.singleCheckbox.disabled = TRUE;
-    self.marriedCheckbox.disabled = TRUE;
-    self.separatedCheckbox.disabled = TRUE;
-  } else {
-    self.singleCheckbox.disabled = FALSE;
-    self.marriedCheckbox.disabled = FALSE;
-    self.separatedCheckbox.disabled = FALSE;
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) dealloc
 {
   [name release];
   [birthday release];
   [age release];
+  [genderLabel release];
+  [civilStatusLabel release];
   
   [dropdownbutton release];
   
@@ -365,6 +375,9 @@
   
   NSString *ageString = [NSString stringWithFormat:@"%d", surveyObj.age];
   ageString = age.text;
+  
+  surveyObj.gender = genderLabel.text;
+  surveyObj.civilStatus = civilStatusLabel.text;
   
   surveyObj.isDirty = NO;
   surveyObj.isDetailViewHydrated = YES;
